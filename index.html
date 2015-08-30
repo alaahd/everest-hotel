@@ -1,0 +1,301 @@
+﻿<html>
+	<head>
+		<title> Everest Hotel & Spa </title>
+		
+		<style>
+			body { background-image:url("background.jpg");
+					background-repeat : no-repeat;
+					margin :50px 269px 250px 250px;}
+			
+			#theme {
+					font-weight: 500;
+					color: gray;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-family: Tahoma;
+					opacity: 0.5;
+					position: absolute;
+					left: 660px;
+					top: 80px;}
+			
+		
+			ul.menubar{
+				list-style-type:none;
+				margin:0;
+				padding:0;
+			}
+			ul.menubar li{
+				float:left;
+			}
+			ul.menubar li a{
+				display:block;
+				width:110px;
+				background-color:#e2e2e2;
+				color:#ff4747;
+				font-size:12px;
+				font-weight: 500;
+				font-family: Segoe UI;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				text-align:center;
+				text-decoration:none;
+				text-transform:uppercase;
+				
+			}
+			ul.menubar li a:hover{
+				background-color:#d4d4d4;
+				color:#f91c1c;
+				font-weight: 700;
+			}
+			#booking {
+				position:absolute;
+				width:230px;
+				height:36px;
+				background-image:url("world map1.jpg");
+				opacity:0.5;
+				border-radius: 0px;
+				left:1020px;
+				z-index:2;
+				transform:translate(0px,0px);
+				 transition: opacity 2s ,height 2s ,border-radius 2s  , background-image 2s;
+			
+			}
+			#booking:hover{
+				background-image:url("world map2.png");
+				opacity:1;
+				height:230px;
+				border-radius: 100px;
+			
+		
+			}
+			#aaa
+				{
+				position: absolute;
+					left: 1090px;
+					top: 185px;
+					font-size:22px;
+					color:#ff4747;
+					font-family:Tahoma;}
+			#imgsli{
+					z-index:1;
+			}
+			#tith{
+					position:absolute;
+					left:1135px;
+					top:145px;
+					color:#ff4747;
+					font-size:12px;
+				
+				font-family: tahoma;
+			}
+			.thumbnail {
+					float: left;
+					width: 260px;
+					height: 180px;
+					margin: 5px;
+				}
+				
+			#footerimg{
+					position:absolute;
+					left:1060px;
+					width: 184px;
+					height: 180px;
+					margin: 5px;
+			}
+			#thumbdiv1 {
+					position:absolute;
+					text-align:center;
+					color:#ffffff;
+					width: 260px;
+					height: 25px;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv1:hover{
+					opacity:0.8;
+			
+			}
+			
+			#thumbdiv2 {
+					position:absolute;
+					text-align:center;
+					color:#ffffff;
+					left:520px;
+					width: 260px;
+					height: 25px;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv2:hover{
+					opacity:0.8;
+			
+			}
+			
+			#thumbdiv3 {
+					position:absolute;
+					text-align:center;
+					color:#ffffff;
+					left:790px;
+					width: 260px;
+					height: 25px;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv3:hover{
+					opacity:0.8;
+			
+			}
+			
+			#thumbdiv4 {
+					position:absolute;
+					left:1060px;
+					width: 184px;
+					height: 35px;
+					margin: 5px;
+					text-align:center;
+					color:#ffffff;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv4:hover{
+					opacity:0.8;
+			
+			}
+			#footerline{
+					position:absolute;
+					top:855px;
+					bottom:25px;
+					width: 1000px;
+					height: 1px;
+					background-color:#ff4747;
+			}
+			ul.share-buttons{
+					list-style-type:none;
+					margin:0;
+					padding:0;
+					position:absolute;
+					right:290px;
+					bottom:-148px;
+			}
+			ul.share-buttons li{
+				float:left;
+				}
+
+			ul.share-buttons li a img{
+					padding-right:4px;
+					width:23px;
+					height:23px;
+				
+				}
+			#rightsr{
+					position:absolute;
+					left:270px;
+					bottom:-178px;
+					color: gray;
+					opacity:0.8;
+					font-size:10px;
+			}
+			
+			
+		</style>
+		
+		<script type="text/javascript">
+				var image1 = new Image()
+				image1.src = "img1.jpg"
+				var image2 = new Image()
+				image2.src = "img2.jpg"
+				var image3 = new Image()
+				image3.src = "img3.jpg"
+				var image4 = new Image()
+				image4.src = "img4.jpg"
+				var image5 = new Image()
+				image5.src = "img5.jpg"
+				var step=1;
+					function slideit()
+					{
+						document.images.slide.src = eval("image"+step+".src");
+						if(step<5)
+							step++;
+						else
+							step=1;
+						setTimeout("slideit()",2500);
+					}
+		</script>
+	</head>
+	<body>
+		<img src="logo.png" alt="logo" style="width:250px;height:130px">
+		<h2 id="theme">Experience to explore</h2>
+		
+		<ul class="menubar">
+			<li>
+				<a href="Direction.html">
+					the complex
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					rooms&suites
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					resturants&bars
+				</a>
+			</li>
+			<li>
+				<a href="spagym.html">
+					fitness&spa
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					packages
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					banquets
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					contact us
+				</a>
+			</li>
+		</ul>
+		<a href="#">
+		<div id="booking"></div></a>
+		<label id="aaa"><b>book now</b></label>
+		<p id="tith">Everest Hotel & Spa<p>
+		<p id="imgsli"> <img src="img1.jpg" width="1000" height="400" name="slide" /> </p>
+			<script type="text/javascript">
+					slideit();
+			</script>
+		<img class="thumbnail" src="footer img1.jpg" width="107" height="90">
+		<img class="thumbnail" src="footer img2.jpg" width="107" height="80">
+		<img class="thumbnail" src="footer img3.jpg" width="116" height="90">
+		<img id="footerimg" src="footer img4.jpg" width="116" height="90">
+		<div id="thumbdiv1">SPA EXPERIANCE </div>
+		<div id="thumbdiv2">DINING DISCOVERY </div>
+		<div id="thumbdiv3">ATTRACTIONS TO EXPLORE</div>
+		<div id="thumbdiv4">SELECTIONS MAGAZINE</div>
+		<div id="footerline"></div>
+		
+		<ul class="share-buttons">
+			 <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="Facebook.png"></a></li>
+			 <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img src="Twitter.png"></a></li>
+			 <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img src="Google+.png"></a></li>
+			 <li><a href="http://www.tumblr.com/share?v=3&u=&t=&s=" target="_blank" title="Post to Tumblr" onclick="window.open('http://www.tumblr.com/share?v=3&u=' + encodeURIComponent(document.URL) + '&t=' +  encodeURIComponent(document.title)); return false;"><img src="Tumblr.png"></a></li>
+			<li><a href="https://www.youtube.com" target="_blank" title="Upload on Youtube" onclick="window.open('https://www.youtube.com' + encodeURIComponent(document.URL)); return false;"><img src="Youtube.png"></a></li>
+		</ul>
+		<p id="rightsr">©2015 Everest Hotel & Spa. All rights reserved.</p>
+
+
+
+	</body>
+
+</html>

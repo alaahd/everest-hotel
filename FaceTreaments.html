@@ -1,0 +1,555 @@
+
+
+
+
+
+
+
+<!-- anywhere.html
+     Display a message when the mouse button is pressed,
+     no matter where it is on the screen 
+     -->
+  <html> 
+  <head>
+  
+  
+  <style>
+  
+	body { background-image:url("background.jpg");
+					background-repeat : repeat;
+					margin :50px 269px 250px 250px;}
+					
+			
+			#theme {
+					font-weight: 500;
+					color: gray;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-family: Tahoma;
+					opacity: 0.5;
+					position: absolute;
+					left: 660px;
+					top: 80px;}
+			
+		
+			ul.menubar{
+				list-style-type:none;
+				margin:0;
+				padding:0;
+			}
+			ul.menubar li{
+				float:left;
+			}
+			ul.menubar li a{
+				display:block;
+				width:110px;
+				background-color:#e2e2e2;
+				color:#ff4747;
+				font-size:12px;
+				font-weight: 500;
+				font-family: Segoe UI;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				text-align:center;
+				text-decoration:none;
+				text-transform:uppercase;
+				
+			}
+			ul.menubar li a:hover{
+				background-color:#d4d4d4;
+				color:#f91c1c;
+				font-weight: 700;
+			}
+			#booking {
+				position:absolute;
+				width:230px;
+				height:36px;
+				background-image:url("world map1.jpg");
+				opacity:0.5;
+				border-radius: 0px;
+				left:1020px;
+				z-index:2;
+				transform:translate(0px,0px);
+				 transition: opacity 2s ,height 2s ,border-radius 2s  , background-image 2s;
+			
+			}
+			#booking:hover{
+				background-image:url("world map2.png");
+				opacity:1;
+				height:230px;
+				border-radius: 100px;
+			
+		
+			}
+			#aaa
+				{
+				position: absolute;
+					left: 1090px;
+					top: 185px;
+					font-size:22px;
+					color:#ff4747;
+					font-family:Tahoma;}
+					
+			#imgsli{
+					z-index:1;
+			}
+			#tith{
+					position:absolute;
+					left:1135px;
+					top:145px;
+					color:#ff4747;
+					font-size:12px;
+				
+				font-family: tahoma;
+			}
+			.thumbnail1 {
+					position:absolute;
+					left:250px;
+					float: left;
+					width: 260px;
+					height: 180px;
+					margin: 5px;
+				}
+				.thumbnail2 {
+					position:absolute;
+					left:520px;
+					float: left;
+					width: 260px;
+					height: 180px;
+					margin: 5px;
+				}
+				.thumbnail3 {
+					position:absolute;
+					left:790px;
+					float: left;
+					width: 260px;
+					height: 180px;
+					margin: 5px;
+				}
+				
+			#footerimg{
+					position:absolute;
+					left:1060px;
+					width: 184px;
+					height: 180px;
+					margin: 5px;
+			}
+			#thumbdiv1 {
+					position:absolute;
+					text-align:center;
+					color:#ffffff;
+					width: 260px;
+					height: 25px;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv1:hover{
+					opacity:0.8;
+			
+			}
+			
+			#thumbdiv2 {
+					position:absolute;
+					text-align:center;
+					color:#ffffff;
+					left:520px;
+					width: 260px;
+					height: 25px;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv2:hover{
+					opacity:0.8;
+			
+			}
+			
+			#thumbdiv3 {
+					position:absolute;
+					text-align:center;
+					color:#ffffff;
+					left:790px;
+					width: 260px;
+					height: 25px;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv3:hover{
+					opacity:0.8;
+			
+			}
+			
+			#thumbdiv4 {
+					position:absolute;
+					left:1060px;
+					width: 184px;
+					height: 35px;
+					margin: 5px;
+					text-align:center;
+					color:#ffffff;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv4:hover{
+					opacity:0.8;
+			
+			}
+			#footerline{
+					position:absolute;
+					top:855px;
+					bottom:25px;
+					width: 1000px;
+					height: 1px;
+					background-color:#ff4747;
+			}
+			ul.share-buttons{
+					list-style-type:none;
+					margin:0;
+					padding:0;
+					position:absolute;
+					right:290px;
+					bottom:-148px;
+			}
+			ul.share-buttons li{
+				float:left;
+				}
+
+			ul.share-buttons li a img{
+					padding-right:4px;
+					width:23px;
+					height:23px;
+				
+				}
+			#rightsr{
+					position:absolute;
+					left:270px;
+					bottom:-178px;
+					color: gray;
+					opacity:0.8;
+					font-size:10px;
+			}
+			#footergroup{
+					position:absolute;
+					
+					bottom:25px;
+			}
+  
+  
+	
+	
+ 
+  #forth{
+  
+  
+position:relative;
+  
+  float:right;
+  width:250px;
+  
+  
+  }
+
+  #third{
+ 
+  
+  position:relative;
+  width:700px;
+  float : right; 
+  <!-- background-color:yellow; -->
+  
+  }
+  
+  #Title1
+  {
+  
+   <!-- background-color: green; -->
+  <!-- margin:10px 10px 10px 10px; -->
+  height:40px;
+  
+  }
+  #Title2
+  {
+    margin:10px 10px 10px;
+   background-color: lightgray;
+   padding :10px 10px 10px 10px ;
+    opacity:0.8;
+	clear : both ;
+   
+   
+  
+  }
+  
+  
+  
+  p{
+  
+  font-family:"Arial" ; 
+  font-size: 15px;
+  margin : 10px 10px 10px 10px;
+  
+  
+  
+  }
+  
+  h1,#t3{
+  
+  color: rgb(160,0,0);
+  
+  }
+  
+  h3{
+  
+  color : rgba(250,30,30,1);
+  opacity: 0.5;
+   clear :both;
+  
+  }
+  
+  
+  span{
+  
+  margin: 25px 25px 25px 25px ;
+  color:rgb(160,0,0);
+  padding: 15px 15px 15px 15px ;
+  
+  }
+  
+  #Head1 {
+  
+  padding:10px 10px 10px 10px ;
+  
+  }
+  
+  
+  #notes
+  {
+     color:rgb(160,0,0);
+  }
+  
+  #t1
+  {
+  color:rgb(160,0,0);
+  
+  padding: 10px 10px 10px 10px;
+  margin-left: 25px;
+  margin-right : 25px;
+  float:left;
+  
+  }
+  
+  a{
+  
+  color:rgb(160,0,0);
+  text-decoration :none;
+  
+  }
+  
+  a:hover{
+  
+  color:rgb(0,0,160);
+  
+  }
+ 
+ a{
+  
+  color:rgb(160,0,0);
+  text-decoration :none;
+  
+  }
+  
+  a:hover{
+  
+  color:rgb(0,0,160);
+  
+  }
+ 
+
+  
+  </style >
+  
+  
+  <body>
+		<a href="Everst website.html">
+		<img src="logo.png" alt="logo" style="width:250px;height:130px">
+		</a>
+		<h2 id="theme">Experience to explore</h2>
+		
+		<ul class="menubar">
+			<li>
+				<a href="direction.html">
+					the complex
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					rooms&suites
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					resturants&bars
+				</a>
+			</li>
+			<li>
+				<a href="spagym.html">
+					fitness&spa
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					packages
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					banquets
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					contact us
+				</a>
+			</li>
+		</ul>
+		<div id="booking"></div>
+		<label id="aaa"><b>book now</b></label>
+		<p id="tith">Everest Hotel & Spa<p>
+		
+	<p id="imgsli"> <img src="gym&spa1.jpg" width="1000" height="400" name="slide" /> </p>
+  
+  <div id="third" >
+  
+  <div id="Head1" >
+
+ 	
+   <h2>Escape To A World Of Harmony & Total Relaxation </h2>
+  
+  </div >
+  
+  <div id="Title1" >
+  
+  <p id="t1" > <a href="SpaGym.html" target="_self"> Packages </a> </p>
+   <p id="t1"  ><a   href="Membership.html"  target="_self">  Membership  </a> </p>
+  
+  <p id="t1" style= " background-color: lightgray; height:30px;  margin-bottom : 0px;  margin-left: 10px;  " > Face Treatments </p>
+  <p id="t1" > <a   href="massages.html"  target="_self">  Massages </a>  </p> 
+  
+  </div>
+  
+  <div id="Title2"> 
+ 
+ 
+    <p id="t3"> Seawater Pearl Ritual Moisturizing  </p>
+ <p>A short and effective treatment to provide comfort, suppleness and hydration. At the heart <br>
+ of the treatment, discover an ultra-relaxing step that allows to infuse skin with ultra <br> 
+ moisturizing marine ingredients. A massage with algae and seawater pearls bolus. <br> 
+ Duration: 55 min<br>  
+ COST: JD  70
+ 
+ </p>
+ 
+
+<p id="t3">  Purifying Deep cleansing Treatment </p>
+<p>This treatment is devoted to oily and acne prone skin. It restores the radiance, reduces the <br>
+ shine and minimizes open pores. Deep cleansing to the face (black heads, white heads).<br> 
+ Duration: 90 min <br>  
+ COST: JD  80 </p>
+
+ <p id="t3"> Youth Revealing Pioneer Treatment   </p>
+ <p>Smoothes wrinkles, firms the skin, leaves skin soft, makes the skin glow with a new <br>
+ radiance, brings relaxation and well being<br> 
+ Duration: 55 min<br>  
+ COST: JD  80 </p>
+
+<p id="t3"> Gentle Soothing Ritual  </p>
+<p>Specially designed for sensitive skin. This facial treatment reduces redness, improves micro-<br>
+ circulation and soothes the skin. Blotchiness is reduced and the skin is soft and hydrated <br> 
+ without irritation.<br> 
+ Duration: 55 min<br>  
+ COST: JD  70 </p>
+
+ <p id="t3"> White Lumination   </p>
+<p>An immediate burst of radiance for a complexion glowing with beauty; with total <br>
+satisfaction in terms of skin radiance, the reduction of dark spots and the brightening of <br> 
+the complexion.<br> 
+ Duration: 55 min<br>  
+ COST: JD  70 </p>
+ 
+  <p id="t3">Oxygenating Treatments </p>
+<p>This treatment is designed for dull complexion and asphyxiated skin, glowing effect, restore <br>
+radiance and luminosity to the skin, oxygenates the skin, eliminates skin pollution.<br> 
+ Duration: 55 min<br>  
+ COST: JD  70 </p>
+ 
+  <p id="t3"> Eye DelighT Ritual </p>
+  
+ <p>For dark circles, fine lines and puffy eyes – this treatment soothes, decongests and <br>
+ invigorates the eye area. A relaxing massage is followed by the application of eye pads to <br> 
+ bring radiance and freshness to the eyes.<br> 
+ Duration: 55 min<br>  
+ COST: JD  70 </p>
+ 
+ 
+ 
+ 
+<span > (All prices are inclusive of service charge 10% & sales tax 16%) </span>
+ 
+	
+ 
+
+</div>
+
+</div>
+
+
+<div id="forth" > 
+ 
+  <h1>Everest SPA - AMMAN</h1>
+<p id="current">The Everest SPA at Everest Hotel&Spa - Amman occupies 7000 m2 of space 
+over two floors.The Everest SPA aims to provide the greatest in health and fitness care,
+ providing its clients with certified instructors, experienced trainers and state-of-the-art facilities. 
+
+</p>
+
+<p>Guests and members can benefit from exclusive access to a modern health club with the best equipment and service.
+ A wide range of group fitness classes and individual training are available,
+ in addition to the latest cardio-vascular machines, wet and dry saunas and superior SPA treatments</p>
+
+<p>SPA facilities include separate men's and women's fitness rooms with breathtaking views of the city,
+ an aerobics studio, sauna, Jacuzzi, juice bar, indoor and outdoor pool (during the warm summer months),
+ a mudroom, ladies' hairdressing salon and barber's shop.</p>
+ 
+<p id="notes">Guests below 16 years old are not allowed to use the indoor swimming pool & spa area (and they have an access to the outdoor pool)
+</p>
+
+</div>
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+	</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+	</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+	</br></br></br></br></br></br></br></br></br></br></br>
+	<img class="thumbnail1" src="footer img1.jpg" width="107" height="90">
+		<img class="thumbnail2" src="footer img2.jpg" width="107" height="80">
+		<img class="thumbnail3" src="footer img3.jpg" width="116" height="90">
+		<img id="footerimg" src="footer img4.jpg" width="116" height="90">
+		<div id="thumbdiv1">SPA EXPERIANCE </div>
+		<div id="thumbdiv2">DINING DISCOVERY </div>
+		<div id="thumbdiv3">ATTRACTIONS TO EXPLORE</div>
+		<div id="thumbdiv4">SELECTIONS MAGAZINE</div>
+
+  </body>
+  </head>
+</html>
+
+
+
+
+
+
+
+
+
+

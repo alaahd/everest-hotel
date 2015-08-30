@@ -1,0 +1,501 @@
+
+
+
+<!-- anywhere.html
+     Display a message when the mouse button is pressed,
+     no matter where it is on the screen 
+     -->
+  <html> 
+  <head>
+  
+  
+  <style>
+  
+	body { background-image:url("background.jpg");
+					background-repeat : repeat;
+					margin :50px 269px 250px 250px;}
+					
+			
+			#theme {
+					font-weight: 500;
+					color: gray;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-family: Tahoma;
+					opacity: 0.5;
+					position: absolute;
+					left: 660px;
+					top: 80px;}
+			
+		
+			ul.menubar{
+				list-style-type:none;
+				margin:0;
+				padding:0;
+			}
+			ul.menubar li{
+				float:left;
+			}
+			ul.menubar li a{
+				display:block;
+				width:110px;
+				background-color:#e2e2e2;
+				color:#ff4747;
+				font-size:12px;
+				font-weight: 500;
+				font-family: Segoe UI;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				text-align:center;
+				text-decoration:none;
+				text-transform:uppercase;
+				
+			}
+			ul.menubar li a:hover{
+				background-color:#d4d4d4;
+				color:#f91c1c;
+				font-weight: 700;
+			}
+			#booking {
+				position:absolute;
+				width:230px;
+				height:36px;
+				background-image:url("world map1.jpg");
+				opacity:0.5;
+				border-radius: 0px;
+				left:1020px;
+				z-index:2;
+				transform:translate(0px,0px);
+				 transition: opacity 2s ,height 2s ,border-radius 2s  , background-image 2s;
+			
+			}
+			#booking:hover{
+				background-image:url("world map2.png");
+				opacity:1;
+				height:230px;
+				border-radius: 100px;
+			
+		
+			}
+			#aaa
+				{
+				position: absolute;
+					left: 1090px;
+					top: 185px;
+					font-size:22px;
+					color:#ff4747;
+					font-family:Tahoma;}
+					
+			#imgsli{
+					z-index:1;
+			}
+			#tith{
+					position:absolute;
+					left:1135px;
+					top:145px;
+					color:#ff4747;
+					font-size:12px;
+				
+				font-family: tahoma;
+			}
+			
+			.thumbnail1 {
+					position:absolute;
+					left:250px;
+					float: left;
+					width: 260px;
+					height: 180px;
+					margin: 5px;
+				}
+				.thumbnail2 {
+					position:absolute;
+					left:520px;
+					float: left;
+					width: 260px;
+					height: 180px;
+					margin: 5px;
+				}
+				.thumbnail3 {
+					position:absolute;
+					left:790px;
+					float: left;
+					width: 260px;
+					height: 180px;
+					margin: 5px;
+				}
+				
+			#footerimg{
+					position:absolute;
+					left:1060px;
+					width: 184px;
+					height: 180px;
+					margin: 5px;
+			}
+			#thumbdiv1 {
+					position:absolute;
+					text-align:center;
+					color:#ffffff;
+					width: 260px;
+					height: 25px;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv1:hover{
+					opacity:0.8;
+			
+			}
+			
+			#thumbdiv2 {
+					position:absolute;
+					text-align:center;
+					color:#ffffff;
+					left:520px;
+					width: 260px;
+					height: 25px;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv2:hover{
+					opacity:0.8;
+			
+			}
+			
+			#thumbdiv3 {
+					position:absolute;
+					text-align:center;
+					color:#ffffff;
+					left:790px;
+					width: 260px;
+					height: 25px;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv3:hover{
+					opacity:0.8;
+			
+			}
+			
+			#thumbdiv4 {
+					position:absolute;
+					left:1060px;
+					width: 184px;
+					height: 35px;
+					margin: 5px;
+					text-align:center;
+					color:#ffffff;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv4:hover{
+					opacity:0.8;
+			
+			}
+			#footerline{
+					position:absolute;
+					top:855px;
+					bottom:25px;
+					width: 1000px;
+					height: 1px;
+					background-color:#ff4747;
+			}
+			ul.share-buttons{
+					list-style-type:none;
+					margin:0;
+					padding:0;
+					position:absolute;
+					right:290px;
+					bottom:-148px;
+			}
+			ul.share-buttons li{
+				float:left;
+				}
+
+			ul.share-buttons li a img{
+					padding-right:4px;
+					width:23px;
+					height:23px;
+				
+				}
+			#rightsr{
+					position:absolute;
+					left:270px;
+					bottom:-178px;
+					color: gray;
+					opacity:0.8;
+					font-size:10px;
+			}
+			#footergroup{
+					position:absolute;
+					
+					bottom:25px;
+			}
+		
+  
+
+  
+  #second {
+    background-image: URL(hotel2.jpg);
+    <!-- background-position: center, left top; -->
+    background-repeat: no-repeat;
+	background-origin: border-box;
+    background-size:cover; 
+	padding :150px;
+	height:200px;
+
+	
+	}
+
+	#third {
+	
+	margin-top:50px;
+	<!-- -webkit-columns: 100px 2; -->
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+
+ 
+  #forth{
+  
+  margin-top:70px;
+  margin-left:30px;
+  position:relative;
+  
+  
+  }
+
+  #third{
+ 
+   margin-top:30px;
+  margin-right:70px;
+  position:relative;
+  float : left; 
+  height:1550px;
+  
+  }
+  
+  p{
+  
+  font-family:"georgia" ; 
+  font-size: 15px;
+  
+  
+  }
+  
+  h1{
+  
+  color: rgb(160,0,0);
+  
+  }
+  h2{
+  
+  color: rgb(200,0,0);
+  
+  }
+  
+  a{
+  
+  text-decoration: none;
+  
+  }
+  
+  #a1:hover{
+  
+  color:rgb(160,0,0);
+  
+  }
+  
+  
+   #current
+  {
+       
+   color:rgb(160,0,0);
+  
+  }
+  
+  </style >
+  
+  
+  <body>
+	<a href="Everst website.html">
+	<img src="logo.png" alt="logo" style="width:250px;height:130px">
+	</a>
+		<h2 id="theme">Experience to explore</h2>
+		
+		<ul class="menubar">
+			<li>
+				<a href="direction.html">
+					the complex
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					rooms&suites
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					resturants&bars
+				</a>
+			</li>
+			<li>
+				<a href="spagym.html">
+					fitness&spa
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					packages
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					banquets
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					contact us
+				</a>
+			</li>
+		</ul>
+		<div id="booking"></div>
+		<label id="aaa"><b>book now</b></label>
+		<p id="tith">Everest Hotel & Spa<p>
+		
+	<p id="imgsli"> <img src="hotel2.jpg" width="1000" height="400" name="slide" /> </p>
+  
+  
+  
+  
+  <div id="third">
+  <h1> the complex </h1>
+<p>	<a id="a1" target="_self" href="EverestHotel.html" target="_blank">OVERVIEW</a>
+
+</p>
+
+<p id="current">   ABOUT JORDAN </p>
+
+<p><a id="a1" target="_self" href="Map.html" target="_blank">MAP AND DIRECTION </a></p>
+
+
+<p><a  id="a1" target="_self" href="FAQ.html" target="_blank">
+FAQs
+</a>
+</p>
+
+
+
+
+
+</div>
+
+
+<div id="forth" > 
+
+<h2>WONDERFUL JORDAN </h2>
+<p id="p1">Jordan is at once the desert, the depths of Arabia, the hills that undulate towards the Dead Sea and the beauty of the Jordan Valley. The ultimate biblical land, its nature seems to have witnessed the birth of the monotheistic world and civilization itself. From the pink stones of Petra to Roman Amphitheatre in Amman, Jordan unveils its complex history for you to discover.</p>
+
+<p id="p1" >History in Jordan is heavily influenced by the Nabateans. Originating from North Arabia, 
+this nomadic tribe blossomed thanks to the lucrative trade in incense and spices from Yemen. The tribe 
+slowly took control of all caravan routes trading between India and the Greco-Roman world. These rich Nabatean caravans 
+made their stops in the rocky confines of Petra, a natural fortress and ideal place for the Nabateans to build their capital 
+and necropolis. Having been influenced by their distant expeditions to Egypt, Syria, Arabia and Mesopotamia, but also by 
+trips to the Greek and Roman lands, the Nabateans transformed the rocky sandstone castle and surroundings in all their ochre
+ and pink hues into the amazing buildings of Petra.<br>
+The Dead Sea is also a worthy destination for a visit where you can float in its sandy foam and enjoy 
+the lowest point on earth. Visit the churches of Madaba, the biblical site of Mount Nebo and Karak. Mount Nebo, 
+mentioned often in biblical texts, is where Moses set eyes on the land of Canaan before he passed away. This is where
+ his tomb lies, making it one of the most sacred and most visited places in Jordan.<br>
+In addition, the valley of Wadi Rum is truly enchanting for desert enthusiasts but also for those who want to explore
+ in the footsteps of Lawrence of Arabia. The desert of Wadi Rum exposes its sandy valleys and dunes with a palette of 
+ colors changing from yellow to red, with impressive cliffs and mounds of sandstone that range from black to deep red 
+ to light yellow, rendering every sunset an unforgettable experience. You may want to explore Wadi Rum with an all-terrain
+ vehicle across the desert, and then relax under a Bedouin tent for some dark sweet tea. Before heading out to Wadi Rum,
+ you might like to visit the Neolithic site of Beida, also known as the 'Little Petra'. Last but not least, the Roman site
+ of Jerash will also leave you spellbound with remains of organized Roman streets and impressive colonnades. .</p>
+ 
+ 
+<h2>EXOTIC AMMAN </h2>
+
+ 
+
+<p id="p1" >Amman is a city of contrasts: deep valleys vs. high hills, old markets vs. new malls, ancient castles vs.
+ rich villas, traditional handicrafts vs. modern art, and a dusty old souk vs. a futuristic modern Downtown.
+Indeed, like a Phoenix rising from its ashes, a much-needed new downtown area for Amman is being built, 
+only minutes away from Everest Hotel & Spa - Amman. Design-led skyscrapers in the Abdali 
+complex have started to transform the capital into a thriving, modern area for business, leisure 
+and residential use. The complex will soon house an IT hub, the American University of Jordan, 
+a performing arts centre and a library. Open spaces and cutting-edge architecture will represent 
+Amman’s urban regeneration with futuresque high-rise and low-rise buildings.</p>
+
+
+
+<p id="p1" >Yet the cultural, classical and historic still remain an important part of the city's 
+heritage behind the scenes. The National Archaeological museum boasts an unusual collection of finds
+ including preserved rhinoceros teeth that date back 200,000 years, famous Dead Sea Scrolls and preserved
+ skulls among many other attractions. The grand Roman amphitheater right in the heart of Old Downtown is also
+ a masterpiece of architecture, while its adjacent museum houses interesting objects related to Jordan's history.
+ The adventurous could also go up to an old fortress (the Qalaa of Jabal al Qalaa) dating from ancient times on a 
+ large hill with an unparalleled view of the city.
+
+ </p>
+ 
+ <p id="p1" > Perched on the side of Jabal Al Weibdeh not far from Everest Hotel & Spa - Amman,
+ Dar al Anda is a cultural hotspot and art gallery that also serves as a venue for musical concerts, 
+ literary events and cultural activities. It sits in a classic old villa built in 1939. The modest villa
+ and adjacent quarters have been transformed into architectural spaces that retain the luxury of past glory
+ with elements of modern Jordanian and Arab culture. The gallery houses a colorful array of sophisticated 
+ paintings by artists from the Arab world.
+  Also in the same area is Darat Al Funun, housed in three traditional buildings of the 1920s. As the 
+  buildings were being transformed into a cultural centre, works in the gardens revealed the remains of a
+ 6th-century century Byzantine church built over a Roman Temple, adding another intriguing dimension to the
+ Darat Al Funun. Currently, the main building often showcases recent discoveries in Jordan: Nabataean artifacts, 
+ papyrus scrolls from Petra written in Byzantine Greek, and ancient stones with Safaitic inscriptions (a language 
+ that may be the ancestor of Arabic) have all been displayed here.</p>
+ 
+ <p id="p1" > Near the renovated public gardens of Jabal Al Weibdeh the National Museum of Fine Arts has a stunning 
+ collection of paintings by artists from all over the Arab and Muslim world spread out through the museum’s buildings.
+ Browse through the museum’s printed reproductions on the way out.
+You must also pay a visit to the Royal Automobile Museum established by His Majesty King Abdullah II in tribute to his 
+father, the late King Hussein, who had a love for cars. You can learn a great deal about the history of the nation and the
+ Hashemite legacy through this splendid museum.
+Beyond art, history and culture, Amman has several areas for shopping with stunning new malls. In between the old and the new,
+ there are the shopping streets of Jabal Amman, within walking distance from Everest Hotel & Spa - Amman. If you scratch 
+ the surface of this city, you will unveil many of its hidden secrets. Enjoy! </p>
+ 
+</div>
+
+
+
+
+	
+		<img class="thumbnail1" src="footer img1.jpg" width="107" height="90">
+		<img class="thumbnail2" src="footer img2.jpg" width="107" height="80">
+		<img class="thumbnail3" src="footer img3.jpg" width="116" height="90">
+		<img id="footerimg" src="footer img4.jpg" width="116" height="90">
+		<div id="thumbdiv1">SPA EXPERIANCE </div>
+		<div id="thumbdiv2">DINING DISCOVERY </div>
+		<div id="thumbdiv3">ATTRACTIONS TO EXPLORE</div>
+		<div id="thumbdiv4">SELECTIONS MAGAZINE</div>
+		
+
+		
+ 
+  </body>
+  
+ 
+  
+  </head>
+  
+  
+</html>

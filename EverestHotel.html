@@ -1,0 +1,438 @@
+
+<!-- anywhere.html
+     Display a message when the mouse button is pressed,
+     no matter where it is on the screen 
+     -->
+  <html> 
+  <head>
+  
+  
+  <style>
+  
+		body { background-image:url("background.jpg");
+					background-repeat : repeat;
+					margin :50px 269px 250px 250px;}
+					
+			
+			#theme {
+					font-weight: 500;
+					color: gray;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-family: Tahoma;
+					opacity: 0.5;
+					position: absolute;
+					left: 660px;
+					top: 80px;}
+			
+		
+			ul.menubar{
+				list-style-type:none;
+				margin:0;
+				padding:0;
+			}
+			ul.menubar li{
+				float:left;
+			}
+			ul.menubar li a{
+				display:block;
+				width:110px;
+				background-color:#e2e2e2;
+				color:#ff4747;
+				font-size:12px;
+				font-weight: 500;
+				font-family: Segoe UI;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				text-align:center;
+				text-decoration:none;
+				text-transform:uppercase;
+				
+			}
+			ul.menubar li a:hover{
+				background-color:#d4d4d4;
+				color:#f91c1c;
+				font-weight: 700;
+			}
+			#booking {
+				position:absolute;
+				width:230px;
+				height:36px;
+				background-image:url("world map1.jpg");
+				opacity:0.5;
+				border-radius: 0px;
+				left:1020px;
+				z-index:2;
+				transform:translate(0px,0px);
+				 transition: opacity 2s ,height 2s ,border-radius 2s  , background-image 2s;
+			
+			}
+			#booking:hover{
+				background-image:url("world map2.png");
+				opacity:1;
+				height:230px;
+				border-radius: 100px;
+			
+		
+			}
+			#aaa
+				{
+				position: absolute;
+					left: 1090px;
+					top: 185px;
+					font-size:22px;
+					color:#ff4747;
+					font-family:Tahoma;}
+					
+			#imgsli{
+					z-index:1;
+			}
+			#tith{
+					position:absolute;
+					left:1135px;
+					top:145px;
+					color:#ff4747;
+					font-size:12px;
+				
+				font-family: tahoma;
+			}
+			
+			.thumbnail1 {
+					position:absolute;
+					left:250px;
+					float: left;
+					width: 260px;
+					height: 180px;
+					margin: 5px;
+				}
+				.thumbnail2 {
+					position:absolute;
+					left:520px;
+					float: left;
+					width: 260px;
+					height: 180px;
+					margin: 5px;
+				}
+				.thumbnail3 {
+					position:absolute;
+					left:790px;
+					float: left;
+					width: 260px;
+					height: 180px;
+					margin: 5px;
+				}
+				
+			#footerimg{
+					position:absolute;
+					left:1060px;
+					width: 184px;
+					height: 180px;
+					margin: 5px;
+			}
+			#thumbdiv1 {
+					position:absolute;
+					text-align:center;
+					color:#ffffff;
+					width: 260px;
+					height: 25px;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv1:hover{
+					opacity:0.8;
+			
+			}
+			
+			#thumbdiv2 {
+					position:absolute;
+					text-align:center;
+					color:#ffffff;
+					left:520px;
+					width: 260px;
+					height: 25px;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv2:hover{
+					opacity:0.8;
+			
+			}
+			
+			#thumbdiv3 {
+					position:absolute;
+					text-align:center;
+					color:#ffffff;
+					left:790px;
+					width: 260px;
+					height: 25px;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv3:hover{
+					opacity:0.8;
+			
+			}
+			
+			#thumbdiv4 {
+					position:absolute;
+					left:1060px;
+					width: 184px;
+					height: 35px;
+					margin: 5px;
+					text-align:center;
+					color:#ffffff;
+					margin: 5px;
+					background-color:#000000;
+					opacity:0.5;
+				}
+			#thumbdiv4:hover{
+					opacity:0.8;
+			
+			}
+			#footerline{
+					position:absolute;
+					top:855px;
+					bottom:25px;
+					width: 1000px;
+					height: 1px;
+					background-color:#ff4747;
+			}
+			ul.share-buttons{
+					list-style-type:none;
+					margin:0;
+					padding:0;
+					position:absolute;
+					right:290px;
+					bottom:-148px;
+			}
+			ul.share-buttons li{
+				float:left;
+				}
+
+			ul.share-buttons li a img{
+					padding-right:4px;
+					width:23px;
+					height:23px;
+				
+				}
+			#rightsr{
+					position:absolute;
+					left:270px;
+					bottom:-178px;
+					color: gray;
+					opacity:0.8;
+					font-size:10px;
+			}
+			#footergroup{
+					position:absolute;
+					
+					bottom:25px;
+			}
+  
+
+  
+  #second {
+    background-image: URL(hotel2.jpg);
+    <!-- background-position: center, left top; -->
+    background-repeat: no-repeat;
+	background-origin: border-box;
+    background-size:cover; 
+    
+	padding :150px;
+	height:200px;
+
+	
+	}
+
+	#third {
+	
+	margin-top:50px;
+	<!-- -webkit-columns: 100px 2; -->
+	
+	}
+	
+	
+	
+	
+	#largest{
+	
+	margin :100px 250px 250px 250px; 
+	
+	
+	}
+	
+	
+	body{
+	
+	background-image: URL(white3.jpg);
+	background-size : cover;
+	
+	}
+ 
+  #forth{
+  
+  margin-top:70px;
+  margin-left:30px;
+  position:relative;
+  
+  
+  }
+
+  #third{
+ 
+   margin-top:30px;
+  margin-right:70px;
+  position:relative;
+  float : left; 
+  height:450px;
+  
+  }
+  
+  p{
+  
+  font-family:"Arial" ; 
+  font-size: 15px;
+  
+  
+  
+  }
+  
+  h1{
+  
+  color: rgb(160,0,0);
+  
+  }
+  
+  a{
+  
+  
+  text-decoration: none;
+  
+  }
+  
+  #a1:hover{
+  
+  color:rgb(160,0,0);
+  
+  }
+  
+  #current
+  {
+       
+   color:rgb(160,0,0);
+  
+  }
+  
+  </style >
+  
+  
+  <body>
+  <a href="Everst website.html">
+  <img src="logo.png" alt="logo" style="width:250px;height:130px">
+  </a>
+		<h2 id="theme">Experience to explore</h2>
+		
+		<ul class="menubar">
+			<li>
+				<a href="direction.html">
+					the complex
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					rooms&suites
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					resturants&bars
+				</a>
+			</li>
+			<li>
+				<a href="spagym.html">
+					fitness&spa
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					packages
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					banquets
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					contact us
+				</a>
+			</li>
+		</ul>
+		<div id="booking"></div>
+		<label id="aaa"><b>book now</b></label>
+		<p id="tith">Everest Hotel & Spa<p>
+		
+	<p id="imgsli"> <img src="hotel2.jpg" width="1000" height="400" name="slide" /> </p>
+
+
+  
+  
+  
+  
+  <div id="third">
+  <h1> the complex </h1>
+<p id="current">OVERVIEW 
+
+</p>
+
+<p>  <a id="a1" target="_self"  href="Direction.html" target="_blank"> ABOUT JORDAN </a> </p>
+
+<p><a  id="a1" target="_self" href="Map.html" target="_blank">MAP AND DIRECTION </a></p>
+<p><a  id="a1" target="_self" href="FAQ.html" target="_blank">
+FAQs
+</a>
+</p>
+
+
+
+
+
+</div>
+
+
+<div id="forth" > 
+
+<p id="p1">Jordan's archaeological treasures, landmarks and biblical history have delighted visitors for decades.ُُEverest Hotel & Spa - Amman is in itself an impressive landmark in the country at the cutting edge of hospitality and design. Yet this deluxe hotel with 8 food and beverage outlets is always aiming to improve its standards. The lobby has been redesigned to feature additional seating areas. A grand piano on a rotating platform with orex stone lighting has transformed the area into a lounge against a background of live entertainment.
+With 286 impeccably furnished guest rooms and suites with free basic speed internet , international satellite TV and individually controlled AC system.</p>
+
+<p id="p1" >This luxurious hotel offers an award winning international high quality standard of service, complemented by eight intercontinental dining experiences. Rich carpeting, opulent fittings and warm rays of natural light, characterize the magnificent banqueting hall at Everest Hotel & Spa - Amman. The ballroom with its royal balcony is the city's largest and most premier venue with a capacity of 1800 guests. With 33 suites and a Royal SPA encompassing an area of 7000 m2, our guests experience outstanding levels of comfort and superior services. Adding to the business and leisure facilities available, the property's very own shopping arcade features two floors filled with different specialty boutiques and convenient shops, including a gift shop, designer stores, fashion boutiques, banks, beauty salon, barber, gourmet shop, jewelers and more.</p>
+
+<p id="p1" >Finally, it is also the less visible facilities and services that make Everest Hotel & Spa - Amman shine. Butler service, grand ballrooms, wireless Internet, non-smoking rooms and customer-driven multilingual staff all contribute to the property's first-class reputation..</p>
+
+
+</div>
+		<img class="thumbnail1" src="footer img1.jpg" width="107" height="90">
+		<img class="thumbnail2" src="footer img2.jpg" width="107" height="80">
+		<img class="thumbnail3" src="footer img3.jpg" width="116" height="90">
+		<img id="footerimg" src="footer img4.jpg" width="116" height="90">
+		<div id="thumbdiv1">SPA EXPERIANCE </div>
+		<div id="thumbdiv2">DINING DISCOVERY </div>
+		<div id="thumbdiv3">ATTRACTIONS TO EXPLORE</div>
+		<div id="thumbdiv4">SELECTIONS MAGAZINE</div>
+
+
+
+  
+ 
+  </body>
+  
+ 
+  
+  </head>
+  
+  
+</html>
